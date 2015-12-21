@@ -11,4 +11,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+
+  # Allow requests from example client app.
+  config.action_cable.allowed_request_origins = ['http://localhost:9010']
 end

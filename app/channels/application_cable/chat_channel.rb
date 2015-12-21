@@ -3,7 +3,7 @@ class ChatChannel < ApplicationCable::Channel
     stream_from "chat_#{params[:room]}"
   end
 
-  def receive(data)
-    ActionCable.server.broadcast "chat_#{params[:room]}", data.merge(sent_by: current_user)
+  def message(data)
+    ActionCable.server.broadcast "chat_#{params[:room]}", data
   end
 end
