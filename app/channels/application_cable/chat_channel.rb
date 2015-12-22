@@ -3,7 +3,7 @@ class ChatChannel < ApplicationCable::Channel
     stream_from "chat_#{params[:room]}"
   end
 
-  def message(data)
+  def newMessage(data)
     ActionCable.server.broadcast "chat_#{params[:room]}", data
   end
 end
