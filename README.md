@@ -1,3 +1,7 @@
+# Deprecated
+
+I don't have time to properly maintain [action-cable-react](https://github.com/schneidmaster/action-cable-react) and it may not work with the latest versions of React and/or Rails. The package also still uses mixins which are [considered harmful](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html). I recommend replacing with [react-actioncable-provider](https://github.com/cpunion/react-actioncable-provider) which offers similar functionality using a higher-order component and is up to date with the latest versions.
+
 # ActionCable + React example server
 
 Example server application for [action-cable-react](https://github.com/schneidmaster/action-cable-react)
